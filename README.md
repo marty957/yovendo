@@ -1,12 +1,16 @@
-# React + Vite
+🤖 Progetto realizzato in collaborazione con @mnparsian
+Questo progetto rappresenta l'integrazione dell'intelligenza artificiale all'interno della piattaforma YOVENDO.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Le aziende registrate nell'applicazione web di YOVENDO possono caricare documenti PDF, che vengono automaticamente salvati su un database. Una volta caricati, l'intelligenza artificiale è in grado di analizzare i contenuti dei file e rispondere in modo preciso a qualsiasi domanda relativa alle informazioni contenute nei documenti.
 
-Currently, two official plugins are available:
+⚙️ Funzionalità principali: 
+Upload dei file PDF da parte degli utenti aziendali
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Salvataggio sicuro e strutturato dei contenuti nel database
 
-## Expanding the ESLint configuration
+Interrogazione dell’AI su qualsiasi dato presente nei PDF
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Esperienza utente migliorata grazie alla risposta immediata dell’intelligenza artificiale
+
+parte Backend: https://github.com/mnparsian/WhatsappAIBot
+
