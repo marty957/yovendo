@@ -1,4 +1,7 @@
 🤖 Progetto realizzato in collaborazione con @mnparsian
+
+
+
 Questo progetto rappresenta l'integrazione dell'intelligenza artificiale all'interno della piattaforma YOVENDO.
 
 Le aziende registrate nell'applicazione web di YOVENDO possono caricare documenti PDF, che vengono automaticamente salvati su un database. Una volta caricati, l'intelligenza artificiale è in grado di analizzare i contenuti dei file e rispondere in modo preciso a qualsiasi domanda relativa alle informazioni contenute nei documenti.
