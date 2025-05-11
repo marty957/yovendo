@@ -6,7 +6,7 @@ function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#" rounded>
+        <Navbar.Brand href="#">
           <Image src="../public/logo.png" alt="yovendo logo" width={"120px"} roundedCircle />
         </Navbar.Brand>
         <Nav className="me-auto">
