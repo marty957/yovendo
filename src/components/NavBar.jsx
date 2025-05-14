@@ -14,7 +14,7 @@ function NavBar() {
             <Nav.Link className="d-inline-block me-3" href="#home">
               Home
             </Nav.Link>
-            <Nav.Link className="d-inline-block" href="#features">
+            <Nav.Link className="d-inline-block" href="yourProfile">
               Your profile
             </Nav.Link>
           </div>
