@@ -17,7 +17,7 @@ function PdfForm() {
       body: formData
     })
       .then((response) => {
-        if (response) {
+        if (response.ok) {
           alert("PDF uploaded correctly");
         }
       })
