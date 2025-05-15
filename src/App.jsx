@@ -4,6 +4,7 @@ import PdfForm from "./components/PdfForm";
 import NavBar from "./components/NavBar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeSection from "./components/HomeSection";
+import PdfSection from "./components/PdfSection";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       >
         <Routes>
           <Route path="/" element={<HomeSection />} />
+          <Route path="/addPdf" element={<PdfSection />} />
         </Routes>
       </BrowserRouter>
     </>

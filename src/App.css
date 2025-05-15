@@ -6,8 +6,7 @@ body {
 }
 
 .addPdf {
-  border: 1px solid #325bc273;
-  margin-top: 40px;
+  background-color: #f0f8ffbf;
   border-radius: 20px;
   padding: 20px;
 }
@@ -27,6 +26,11 @@ body {
   background: url("sfondo.png");
   opacity: 60%;
   margin-top: 20px;
+}
+.sfondo-pdf {
+  background: url("sfondo.png");
+  opacity: 60%;
+  height: 90vh;
 }
 
 .vibrate-1 {
