@@ -1,10 +1,14 @@
 import { useState } from "react";
-import { Form } from "react-bootstrap";
+import { Form, Spinner } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
+import { useNavigate } from "react-router-dom";
 
 function ModalAddFirm(props) {
   const [organization, setOrganization] = useState({ name: "", whatsappNumber: "" });
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
   const addFirm = (e) => {
+    setLoading(true);
     e.preventDefault();
     fetch("http://localhost:8080/api/whatsapp/organizations", {
       method: "POST",
@@ -24,6 +28,9 @@ function ModalAddFirm(props) {
       .then((data) => {
         if (data) {
           setOrganization({ name: "", whatsappNumber: "" });
+          setLoading(false);
+          props.onHide();
+          navigate(`/`);
         }
       })
       .catch((err) => {
@@ -34,10 +41,11 @@ function ModalAddFirm(props) {
   return (
     <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">Modal heading</Modal.Title>
+        <Modal.Title id="contained-modal-title-vcenter">ADD YOUR FIRM HERE</Modal.Title>
       </Modal.Header>
       <Form onSubmit={addFirm}>
         <Modal.Body>
+          {loading && <Spinner animation="border" variant="info" />}
           <Form.Group className="mb-3" controlId="Organization's name">
             <Form.Label>Organization's name</Form.Label>
             <Form.Control
@@ -55,7 +63,7 @@ function ModalAddFirm(props) {
               type="text"
               placeholder="whatsappNumber"
               value={organization.whatsappNumber}
-              onChange={(e) => setOrganization({ ...organization, whatsappNumber: e.target.vale })}
+              onChange={(e) => setOrganization({ ...organization, whatsappNumber: e.target.value })}
             />
           </Form.Group>
         </Modal.Body>
