@@ -6,7 +6,7 @@ function PdfSection() {
   return (
     <>
       <NavBar className="shadow-lg" />
-      <Container className="sfondo-pdf" fluid>
+      <Container className="sfondo-pdf pt-5" fluid>
         <PdfForm className="mt-1" />
       </Container>
     </>

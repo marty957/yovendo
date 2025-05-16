@@ -30,7 +30,7 @@ function ModalAddFirm(props) {
           setOrganization({ name: "", whatsappNumber: "" });
           setLoading(false);
           props.onHide();
-          navigate(`/`);
+          navigate(`/addPdf`);
         }
       })
       .catch((err) => {
